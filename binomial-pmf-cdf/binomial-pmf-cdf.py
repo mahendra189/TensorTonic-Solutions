@@ -1,11 +1,10 @@
-import numpy as np
-from scipy.special import comb
-from scipy.stats import binom
+import math
 
-def binomial_pmf_cdf(n, p, k):
+def binomial_pmf_cdf(n: int, p: float, k: int) -> dict:
     """
-    Compute Binomial PMF and CDF.
+    Returns a dictionary with pmf and cdf.
     """
     # Write code here
-    return [binom.pmf(k,n,p),binom.cdf(n,p,k)]
-    
+    pmf = math.comb(n,k) * (p**k)*(1-p)**(n-k)
+    cdf = sum(math.comb(n,i)*(p**i)*(1-p)**(n-i) for i in range(k+1)) 
+    return {"pmf":float(pmf),"cdf":float(cdf)}
