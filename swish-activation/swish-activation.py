@@ -1,9 +1,14 @@
 import numpy as np
 
-def swish(x):
+def swish(x: list) -> np.ndarray:
     """
-    Implement Swish activation function.
+    Returns a NumPy array with the same shape as x.
     """
     # Write code here
     x = np.array(x)
-    return x * (1/(1+np.exp(-x)))
+
+    def sigmoid(x):
+        return 1 / (1 + np.exp(-x))
+
+    return x*sigmoid(x)
+    
