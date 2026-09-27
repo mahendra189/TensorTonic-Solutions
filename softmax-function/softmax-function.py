@@ -5,9 +5,14 @@ def softmax(x: list) -> np.ndarray:
     Returns stable softmax probabilities as a NumPy array matching the shape of x.
     """
     # Write code here
-    x = np.asarray(x, dtype=float)
-
-    shifted = x - np.max(x, axis=-1, keepdims=True)
-    exp_x = np.exp(shifted)
-
-    return exp_x / np.sum(exp_x, axis=-1, keepdims=True)
+    x = np.array(x)
+    if x.ndim ==1:
+        m = np.max(x)
+        exp_values = np.exp(x-m)
+        return exp_values / exp_values.sum()
+    else:
+        m = np.max(x,axis=1,keepdims=True)
+        exp_values = np.exp(x-m)
+        return exp_values/ np.sum(exp_values,axis=1,keepdims=True)
+    
+    
