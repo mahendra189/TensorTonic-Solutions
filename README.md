@@ -28,6 +28,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Compute AUC (Area Under ROC) | Calculate binary-classification ROC AUC from false-positive and true-positive rates using trapezoidal integration. | https://www.tensortonic.com/problems/auc |
 | Backpropagate Through a Scalar Neuron | Evaluate one tanh neuron and manually propagate an upstream gradient to its inputs, weights, and bias. | https://www.tensortonic.com/problems/autograd-l04-neuron-backward |
 | Evaluate a Dense Layer | Evaluate a PyTorch layer of independent scalar neurons sharing one input vector, with optional elementwise tanh. | https://www.tensortonic.com/problems/autograd-l07-dense-layer-forward |
+| Evaluate a Multi-Layer Perceptron | Evaluate a supplied multi-layer perceptron by feeding each layer output into the next layer. | https://www.tensortonic.com/problems/autograd-l07-mlp-forward |
 | Bag-of-Words Vector | Build a NumPy bag-of-words count vector from an ordered vocabulary while ignoring out-of-vocabulary tokens. | https://www.tensortonic.com/problems/bag-of-words |
 | Batch Normalization (Forward) | Implement the batch-normalization forward pass in NumPy using feature-wise statistics, scale, shift, and numerical stability. | https://www.tensortonic.com/problems/batch-normalization |
 | Bernoulli Probability Mass Function & Moments | Compute the Bernoulli probability mass function, expected value, and variance for a valid success probability. | https://www.tensortonic.com/problems/bernoulli-pmf |
