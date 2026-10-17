@@ -28,6 +28,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Compute AUC (Area Under ROC) | Calculate binary-classification ROC AUC from false-positive and true-positive rates using trapezoidal integration. | https://www.tensortonic.com/problems/auc |
 | Build a Scalar Expression Graph | Build a scalar expression graph in forward order from leaf records and addition or multiplication operations. | https://www.tensortonic.com/problems/autograd-l02-build-expression-graph |
 | Backpropagate Through a Scalar Neuron | Evaluate one tanh neuron and manually propagate an upstream gradient to its inputs, weights, and bias. | https://www.tensortonic.com/problems/autograd-l04-neuron-backward |
+| Evaluate a Scalar Neuron | Evaluate a scalar PyTorch tanh neuron from aligned inputs, weights, and bias using promoted floating-point types. | https://www.tensortonic.com/problems/autograd-l04-neuron-forward |
 | Evaluate a Dense Layer | Evaluate a PyTorch layer of independent scalar neurons sharing one input vector, with optional elementwise tanh. | https://www.tensortonic.com/problems/autograd-l07-dense-layer-forward |
 | Evaluate a Multi-Layer Perceptron | Evaluate a supplied multi-layer perceptron by feeding each layer output into the next layer. | https://www.tensortonic.com/problems/autograd-l07-mlp-forward |
 | Collect Module Parameters Recursively | Collect scalar parameter views from a supplied hierarchy of layer weight matrices and bias vectors. | https://www.tensortonic.com/problems/autograd-l07-recursive-parameter-collection |
